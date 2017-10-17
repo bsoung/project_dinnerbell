@@ -38,7 +38,6 @@ export default class NutritionInfo extends Component {
         <RaisedButton
           labelColor="#fff"
           backgroundColor="#E34B27"
-          hoverColor="#C32B07"
           label="Nutrition Facts"
           onClick={this.handleOpen}
         />
@@ -60,20 +59,20 @@ export default class NutritionInfo extends Component {
               <table className="performance-facts__table">
                 <thead>
                   <tr>
-                    <th colspan="3" className="small-info">
+                    <th colSpan="3" className="small-info">
                       Amount Per Serving
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th colspan="2">
+                    <th colSpan="2">
                       <b>Calories</b>
                       {Math.floor(recipe.calories / recipe.serves)}
                     </th>
                   </tr>
                   <tr className="thick-row">
-                    <td colspan="3" className="small-info">
+                    <td colSpan="3" className="small-info">
                       <b>% Daily Value*</b>
                     </td>
                   </tr>
@@ -83,8 +82,8 @@ export default class NutritionInfo extends Component {
                     let individualDaily = Math.floor(nut.daily / recipe.serves);
 
                     return (
-                      <tr>
-                        <th colspan="2">
+                      <tr key={nut.label}>
+                        <th colSpan="2">
                           <b>{nut.label}</b>
                           {individualServe}g
                         </th>
@@ -106,7 +105,7 @@ export default class NutritionInfo extends Component {
               <table className="performance-facts__table--small small-info">
                 <thead>
                   <tr>
-                    <td colspan="2" />
+                    <td colSpan="2" />
                     <th>Calories:</th>
                     <th>2,000</th>
                     <th>2,500</th>
@@ -114,7 +113,7 @@ export default class NutritionInfo extends Component {
                 </thead>
                 <tbody>
                   <tr>
-                    <th colspan="2">Total Fat</th>
+                    <th colSpan="2">Total Fat</th>
                     <td>Less than</td>
                     <td>65g</td>
                     <td>80g</td>
@@ -127,25 +126,25 @@ export default class NutritionInfo extends Component {
                     <td>25g</td>
                   </tr>
                   <tr>
-                    <th colspan="2">Cholesterol</th>
+                    <th colSpan="2">Cholesterol</th>
                     <td>Less than</td>
                     <td>300mg</td>
                     <td>300 mg</td>
                   </tr>
                   <tr>
-                    <th colspan="2">Sodium</th>
+                    <th colSpan="2">Sodium</th>
                     <td>Less than</td>
                     <td>2,400mg</td>
                     <td>2,400mg</td>
                   </tr>
                   <tr>
-                    <th colspan="3">Total Carbohydrate</th>
+                    <th colSpan="3">Total Carbohydrate</th>
                     <td>300g</td>
                     <td>375g</td>
                   </tr>
                   <tr>
                     <td class="blank-cell" />
-                    <th colspan="2">Dietary Fiber</th>
+                    <th colSpan="2">Dietary Fiber</th>
                     <td>25g</td>
                     <td>30g</td>
                   </tr>

@@ -21,7 +21,7 @@ export default class IframeComponent extends Component {
 
   render() {
     let { author, url } = this.props;
-    url = url.slice(0, 5) === "http:" ? "https" + url.slice(4) : url;
+    // url = url.slice(0, 5) === "http:" ? "https" + url.slice(4) : url;
     const actions = [
       <FlatButton primary={true} onClick={this.handleClose}>
         BACK
