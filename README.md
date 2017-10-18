@@ -45,6 +45,7 @@ The wireframe can be found as 'Dinnerbell.pdf' in the root directory.
 
 ## API Reference
 
+### Meals
 * GET /api/meals :: Returns a list of meals
 * POST /api/meals :: Creates a new meal
 * POST /api/meals/picture :: Uploads a picture of a new meal
@@ -52,18 +53,21 @@ The wireframe can be found as 'Dinnerbell.pdf' in the root directory.
 * PATCH /api/meals/:id :: Update a meal by id
 * DELETE /api/meals/:id :: Remove a meal by id
 
+### Recipes
 * GET /api/recipes :: Returns a list of recipes
 * POST /api/recipes :: Creates a new recipe
 * GET /api/recipes/:id :: Get a recipe by id
 * PATCH /api/recipes/:id :: Update a recipe by id
 * DELETE /api/recipes/:id :: Remove a recipe by id
 
+### Ratins
 * GET /api/ratings :: Returns a list of ratings
 * POST /api/ratings :: Creates a new rating
 * GET /api/ratings/:id :: Get a rating by id
 * PATCH /api/ratings/:id :: Update a rating by id
 * DELETE /api/ratings/:id :: Remove a rating by id
 
+### Users
 * GET /api/users :: Returns a list of users
 * GET /api/users/:id :: Get a user by id
 * POST /api/users/picture :: Uploads a picture of a user profile picture
